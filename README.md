@@ -10,6 +10,17 @@ Permissions:
 Role 1: Can Create & Read.
 Role 2: Can Create, Read & Update.
 Role 3: Can perform full CRUD operations.
+
+
+
+
+
+
+
+
+
+
+
 📂 2. Project Structure
 rbac-flask-app/
 ├── app.py           # Main Flask application (routes and logic)
@@ -17,6 +28,16 @@ rbac-flask-app/
 ├── rbac.py          # Implements Role-Based Access Control
 ├── config.py        # Configuration (MongoDB URI & JWT key)
 └── requirements.txt # List of required packages
+
+
+
+
+
+
+
+
+
+
 🔍 3. Core Components
 a) Configuration – config.py
 Handles application configuration. It defines MongoDB connection and JWT secret key:
@@ -49,6 +70,14 @@ This file brings everything together by handling:
 User Authentication
 Organisation and Employee APIs
 Role-based restrictions
+
+
+
+
+
+
+
+
 🔐 4. API Endpoints Explanation
 a) User Authentication
 Allows users to log in and get a JWT token:
@@ -125,7 +154,13 @@ Users log in to receive a JWT token.
 Role Verification:
 Each route is protected by the role_required decorator.
 CRUD Access:
-Based on user roles, specific endpoints (Create, Read, Update, Delete) are available.
+Based on user roles, specific endpoints (Create, Read, Update, Delete) are available
+
+
+
+
+
+
 ✅ 6. Testing the Application
 Start MongoDB:
 
@@ -153,12 +188,19 @@ c) Fetch Employees
 
 GET http://localhost:5001/employees
 Authorization: Bearer <your_token>
+
+
+
+
 📊 7. Key Features Recap
 Secure – Uses JWT for user verification.
 RBAC – Manages access levels using role_required.
 Flexible CRUD – Handle multiple models (Organisation, Employee).
 MongoDB – Scalable and flexible for real-world usage.
 Modular Design – Easily extendable for future models.
+
+
+
 🚀 8. Conclusion & Future Scope
 This project is a scalable Flask application implementing secure RBAC.
 
